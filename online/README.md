@@ -8,8 +8,8 @@
    `replace github.com/Truth-NJU/tprc-go/trpcprotocol/online => ./stub/github.com/Truth-NJU/tprc-go/trpcprotocol/online`，但是这儿我们需要使用远端pb文件，因此删除这行
 5. 将online/stub/github.com/Truth-NJU/tprc-go/trpcprotocol/online/目录下的所有文件复制到trpcprotocol/online目录下，将文件push到github上
 6. 修改go.mod中github.com/Truth-NJU/tprc-go/trpcprotocol/online的版本号(可以先删除go.mod中的github.com/Truth-NJU/tprc-go/trpcprotocol/online依赖，然后直接go get -u github.com/Truth-NJU/tprc-go/trpcprotocol/online，会输出找不到该依赖，但是会输出一个版本号，用这个版本号即可)
-6. main.go中会注册message服务 
-7. 可以在message.go中具体实现message服务，这里返回消息id 
-8. 修改trpc_go.yaml文件，可以参照现在项目里的来写 
-9. 运行main.go，即可启动服务 
-10. 运行test.http可以发送请求测试接口，请求接口的格式是trpc.test.local.Message/SendMessage
+7. main.go中会注册message服务 
+8. 可以在message.go中具体实现message服务，这里返回消息id 
+9. 修改trpc_go.yaml文件，可以参照现在项目里的来写 
+10. 运行main.go，即可启动服务 
+11. 运行test.http可以发送请求测试接口，请求接口的格式是trpc.test.local.Message/SendMessage
