@@ -1,0 +1,11 @@
+POST http://localhost:8000/trpc.test.local.Message/SendMessage
+Content-Type: application/json
+
+{
+  "msg_content": "string",
+  "msg_title": "string",
+  "send_from": "raintao",
+  "send_to": [
+    "raintao"
+  ]
+}}

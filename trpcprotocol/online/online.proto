@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package trpc.test.local;
+
+option go_package = "github.com/Truth-NJU/tprc-go/trpcprotocol/online";
+
+// https://developers.google.com/protocol-buffers/docs/proto3#any
+// 同模块下，可通过如下格式导入当前PB文件: import "Test/your_proto.proto"
+
+import "google/protobuf/struct.proto";
+import "google/protobuf/timestamp.proto";
+
+service Message {
+  rpc SendMessage (MessageRequest) returns (MessageResponse);
+}
+
+message MessageResponse {
+  string msg_id = 1;
+}
+
+message MessageRequest {
+  string send_from = 1;
+  repeated string send_to = 2;
+  string msg_title = 3;
+  string msg_content = 4;
+}
