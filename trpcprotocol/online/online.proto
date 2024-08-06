@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package trpc.test.local;
+package trpc.test.online;
 
 option go_package = "github.com/Truth-NJU/tprc-go/trpcprotocol/online";
 

@@ -42,11 +42,11 @@ func MessageService_SendMessage_Handler(svr interface{}, ctx context.Context, f 
 
 // MessageServer_ServiceDesc descriptor for server.RegisterService.
 var MessageServer_ServiceDesc = server.ServiceDesc{
-	ServiceName: "trpc.test.local.Message",
+	ServiceName: "trpc.test.online.Message",
 	HandlerType: ((*MessageService)(nil)),
 	Methods: []server.Method{
 		{
-			Name: "/trpc.test.local.Message/SendMessage",
+			Name: "/trpc.test.online.Message/SendMessage",
 			Func: MessageService_SendMessage_Handler,
 		},
 	},
@@ -90,10 +90,10 @@ var NewMessageClientProxy = func(opts ...client.Option) MessageClientProxy {
 func (c *MessageClientProxyImpl) SendMessage(ctx context.Context, req *MessageRequest, opts ...client.Option) (*MessageResponse, error) {
 	ctx, msg := codec.WithCloneMessage(ctx)
 	defer codec.PutBackMessage(msg)
-	msg.WithClientRPCName("/trpc.test.local.Message/SendMessage")
+	msg.WithClientRPCName("/trpc.test.online.Message/SendMessage")
 	msg.WithCalleeServiceName(MessageServer_ServiceDesc.ServiceName)
 	msg.WithCalleeApp("test")
-	msg.WithCalleeServer("local")
+	msg.WithCalleeServer("online")
 	msg.WithCalleeService("Message")
 	msg.WithCalleeMethod("SendMessage")
 	msg.WithSerializationType(codec.SerializationTypePB)
