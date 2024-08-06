@@ -16,6 +16,8 @@ git.woa.com/trpc-go/tnet v0.0.15/go.mod h1:Ipq6vv0Nlbxdf3k4KYXJ5Gp1D0o29TN5PX5aF
 github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
+github.com/Truth-NJU/tprc-go/trpcprotocol/online v0.0.0-20240806090513-6da7a51dce9c h1:ueYMyz0lgGoZ7kctBJmzAYJO5HdlW4dBcLzl4h/iCHA=
+github.com/Truth-NJU/tprc-go/trpcprotocol/online v0.0.0-20240806090513-6da7a51dce9c/go.mod h1:yN65ciSek/e34BViEWOEX/VA0ZY8wuFZeRn2ccuKMoc=
 github.com/agiledragon/gomonkey v2.0.2+incompatible h1:eXKi9/piiC3cjJD1658mEE2o3NjkJ5vDLgYjCQu0Xlw=
 github.com/agiledragon/gomonkey v2.0.2+incompatible/go.mod h1:2NGfXu1a80LLr2cmWXGBDaHEjb1idR6+FVlX5T3D9hw=
 github.com/andybalholm/brotli v1.0.2/go.mod h1:loMXtMfwqflxFJPmdbJO0a3KNoPuLBgiu3qAvBg8x/Y=
