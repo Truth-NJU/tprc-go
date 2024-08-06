@@ -17,3 +17,4 @@
 9. 修改trpc_go.yaml文件，可以参照现在项目里的来写 
 10. 运行main.go，即可启动服务 
 11. 运行test.http可以发送请求测试接口，请求接口的格式是trpc.test.online.Message/SendMessage
+12. online/stu目录可以选择删除，因为已经不依赖该文件，而是依赖远端github上的文件
